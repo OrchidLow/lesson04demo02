@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      {{!-- This is the look and feel of my website --}}
+    <title>{{title}}</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      {{!-- Option 1: local file add link to css --}}
+<!--      <link rel="stylesheet" href="/public/stylesheets/bootstrap.min.css" />-->
+      {{!-- Option 2: Use the CDN --}}
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" integrity="undefined" crossorigin="anonymous">
+  </head>
+  <body>
+  {{!-- Add a bootstrap Menu --}}
+  <nav class="navbar navbar-expand-sm bg-light">
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+          <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/projects">Projects</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="/contact">Contact</a>
+          </li>
+      </ul>
+
+  </nav>
+
+    {{{body}}}
+  {{!-- Option 1: add link to js file --}}
+<!--  <script src="/public/javascript/bootstrap.min.js"></script>-->
+    {{!-- Option 2:  --}}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="undefined" crossorigin="anonymous"></script>
+  </body>
+</html>
